@@ -1,0 +1,1 @@
+export const getcities = () => fetch("/city_list.json").then((data) => data.json());
