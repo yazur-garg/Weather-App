@@ -60,7 +60,7 @@ class LoadData extends Component {
                         temp += cities[i].id.toString() + ",";
                     temp += cities[cities.length-1].id.toString();
                 }
-                fetch("http://api.openweathermap.org/data/2.5/group?id=" + temp + "&units=metric&appid=c528f5397888b4f37fef45098aebf883")
+                fetch("https://api.openweathermap.org/data/2.5/group?id=" + temp + "&units=metric&appid=c528f5397888b4f37fef45098aebf883")
                 .then(res => res.json())
                 .then((data) => {
                     this.setState({weatherdata:[]})
