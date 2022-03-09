@@ -41,7 +41,9 @@ class LoadData extends Component {
                 fetch("https://api.openweathermap.org/data/2.5/weather?q=" + this.props.city + "&units=metric&appid=c528f5397888b4f37fef45098aebf883")
                 .then(res => res.json())
                 .then((data) => {
-                    this.setState({weatherdata:[]})
+                    this.setState({weatherdata:[], display: []})
+                    if(data.cod !== undefined)
+                        data = undefined;
                     var list = this.state.weatherdata.concat(data);
                     var list2 = this.state.dbweatherdata.concat(list);
                     this.setState({ dbweatherdata: list2,weatherdata: list, loading: false});
@@ -52,7 +54,7 @@ class LoadData extends Component {
             }
             else{
                 var cities = (this.props.cities).filter(city => city.name.toUpperCase() === this.props.city.toUpperCase());
-                //console.log(cities);
+                console.log(cities);
                 var temp = "";
                 if (cities.length > 0)
                 {

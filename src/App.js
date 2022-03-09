@@ -43,7 +43,7 @@ class App extends Component{
 
     formSubmit(e){
         e.preventDefault();
-        var temp = e.target.elements.city.value.split(' ').join('')
+        var temp = e.target.elements.city.value
         this.setState({city: temp});
         if (this.props.location.pathname !== "/")
             this.props.navigate('/');
