@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+## [Click here to visit the app](https://todays-weather-yazurgarg.netlify.app/)
+
+# About
+This application is built using [React]() and [Bootstrap](). It uses the [Open Weather Map API](https://openweathermap.org/) to provide the user with the weather data.  
+The user can input the city name and the app will provided the weather for all the cities in the world with that name. Application also keeps track of all the cities the user have previously visited.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
