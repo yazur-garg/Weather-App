@@ -1,4 +1,4 @@
-## [Click here to visit the app](https://todays-weather-yazurgarg.netlify.app/)
+## [Click here to visit the app](https://current-weather-yazurgarg.netlify.app)
 
 # About
 This application is built using [React]() and [Bootstrap](). It uses the [Open Weather Map API](https://openweathermap.org/) to provide the user with the weather data.  
